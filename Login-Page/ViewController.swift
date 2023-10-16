@@ -7,18 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LogInController: UIViewController {
     
-    @IBOutlet weak var Username: UITextField!
-    @IBOutlet weak var Password: UITextField!
-    
-    @IBAction func SignIn(_ sender: Any) {
-        print(Username.text ?? "")
-        print(Password.text ?? "")
-    }
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func signIn(_ sender: Any) {
+        print(usernameTextField.text ?? "")
+        print(passwordTextField.text ?? "")
+    }
 }
-
